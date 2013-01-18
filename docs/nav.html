@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Search Documentation</title>
+	<link rel="stylesheet"  href="../css/themes/default/jquery.mobile-1.2.0.css" />
+	<link rel="stylesheet" href="_assets/css/jqm-docs.css"/>
+
+	<script src="../js/jquery.js"></script>
+	<script src="../docs/_assets/js/jqm-docs.js"></script>
+	<script src="../js/jquery.mobile-1.2.0.js"></script>
+	
+</head> 
+<body> 
+	<div data-role="page" data-theme="a" class="nav-search">
+		
+	<div data-role="content">   
+
+	<style>
+		a.activeLink {color:#F00;}
+
+		.nav-search .ui-content {
+			margin-top:16px;
+		}
+		.nav-search .ui-corner-top {
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			border-radius: 0;
+		}
+		.nav-search .ui-bar-a {
+			background-image:none;
+			background-color:#555;
+		}
+		.nav-search .ui-btn-up-a {
+			background-image:none;
+			background-color:#333333;
+		}
+		.nav-search .ui-btn-inner {
+			border-top: 1px solid #888;
+			border-color: rgba(255, 255, 255, .1);
+		}
+	</style>
+	
+	<script>
+		$('body').delegate('.nav-search', 'pageshow', function( e ) {
+			$('.ui-input-text').attr("autofocus", true)
+		});			
+	</script>
+	
+	<ul data-role="listview" data-theme="a" data-divider-theme="a" data-filter="true" data-filter-theme="a" data-filter-placeholder="Search Documentation...">
+			<li data-filtertext="activate ribbon active"> 
+				<a style="color:#FF6;" href="about/activateRibbon.html">Activate Ribbon</a>
+			</li>
+			<li data-filtertext="answers desk consult">
+				<a href="#">Answers Desk Consult</a>
+			</li>
+			<li data-filtertext="collect collecting information">
+				<a style="color:#FF6;" href="about/collectingInformation.html">Collecting Information</a>
+			</li>
+			<li data-filtertext="contact methods">
+				<a style="color:#FF6;" href="about/contactMethods.html">Contact Methods</a>
+			</li>
+			<li data-filtertext="create new customer shazam">
+				<a style="color:#FF6;" href="about/index.html">Create a New Customer Menu</a>
+			</li>
+			<li data-filtertext="create service activity">
+				<a href="#">Create a Service Activity</a>
+			</li>
+			<li data-filtertext="look up service activity">
+				<a href="#">Look Up a Service Activity</a>
+			</li>
+			<li data-filtertext="new customer icon button">
+				<a style="color:#FF6;" href="about/newCustomer.html">New Customer Button</a>
+			</li>
+			<li data-filtertext="search record records">
+				<a href="#">Search for Records</a>
+			</li>
+		</ul>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+</body>
+</html>
