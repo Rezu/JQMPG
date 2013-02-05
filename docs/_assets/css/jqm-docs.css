@@ -186,14 +186,12 @@ dd h4 { margin:15px 0 0 0; }
 /* popup examples */
 .type-interior .ui-popup-container .ui-content { padding: 15px !important; }
 
-
-
 /* F bar theme - just for the docs overview headers */  /*blue #3086AB    red #9B242D*/
 .ui-bar-f {
-/*	border: 1px solid #56A00E;*/
+	border: 1px solid #3086AB;               /*changed from #56A00E*/
 	background: 			#3086AB;
 	color: 					#fff;
-/*	font-weight: bold;*/
+	font-weight: bold;
 /*	text-shadow: 0 1px 1px #335413;	*/
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#3086AB), to(#3086AB)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(#3086AB, #3086AB); /* Chrome 10+, Saf5.1+ */
@@ -219,7 +217,7 @@ dd h4 { margin:15px 0 0 0; }
 	font-weight: bold;
 }
 .ui-btn-up-f {
-/*	border: 1px solid 		#9B242D;*/
+	border: 1px solid 		#3086AB;  /*same value as following background to help keep flat*/
 	background: 			#3086AB;
 /*	font-weight: bold;*/
 	color: 					#fff;
@@ -235,10 +233,11 @@ dd h4 { margin:15px 0 0 0; }
 	color: 					#fff;
 }
 .ui-btn-hover-f {
-/*	border: 1px solid 		#9B242D;
-*/	background: 			#3086AB; opacity:.7;
-/*	font-weight: bold;
-*/	color: 					#fff;
+	border: 1px solid 		#3a88aa;
+	background: 			#3086AB; 
+/*	opacity:.7;*/
+/*	font-weight: bold;*/
+	color: 					#fff;
 /*	text-shadow: 0 1px 1px #234403;
 */	background-image: -webkit-gradient(linear, left top, left bottom, from(#9B242D), to(#9B242D)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(#3086AB, #3086AB); /* Chrome 10+, Saf5.1+ */
@@ -422,8 +421,8 @@ dd h4 { margin:15px 0 0 0; }
 		margin: 0;
 	}
 	.ui-mobile #jqm-homeheader {
-		padding: 30px 10px 0;
-/*		padding: 0;*/
+/*		padding: 30px 10px 0;
+*/		padding: 0;
 	}
 	.content-primary {
 		width: 45%;
